@@ -10,8 +10,11 @@
     margin-bottom:30px;
 }
 
-.collapse {
-    width:100%;
+.collapse2 {
+    width:90%;
+    margin: auto;
+    
+    
     
 }
 
@@ -19,3 +22,29 @@
     padding: 0px 65px 0px 65px;
 }
 
+@media screen and (max-width:750px) {
+
+    .cardpropos {
+        padding: 0px 10px;
+    }
+
+    .collapse2 {
+        width: 100%;
+        
+    }
+
+    .collapse  {
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .collapse2 {
+
+        max-width: 300px;
+        margin-left: 0px;
+
+    }
+
+}

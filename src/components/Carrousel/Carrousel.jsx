@@ -8,7 +8,7 @@ import style from './Carrousel.scss'
 
 
 const Carrousel = () => {
-    const [index, setIndex] = useState(0); //je définis l'index du premier slide à 0 
+    const [index, setIndex] = useState(1); 
     const {id} = useParams();
     const location = data.find((item) => item.id === id);
     const length = (location.pictures.length);
@@ -16,7 +16,7 @@ const Carrousel = () => {
 
     const prevSlide = () => {
 		const newIndex = index ;
-        setIndex(newIndex  === 0 ? length  : newIndex - 1);
+        setIndex(newIndex  === 1 ? length  : newIndex - 1);
         const newIndeximg = indeximg ;
         setIndeximg(newIndeximg === 0 ? length -1  : newIndeximg -1);
         
@@ -24,27 +24,28 @@ const Carrousel = () => {
 
     const handleNext = () => {
         const newIndex = index ;
-        setIndex(newIndex === length  ? 0 : newIndex + 1 );
+        setIndex(newIndex === length   ? 1 : newIndex + 1 );
         const newIndeximg = indeximg ;
-        setIndeximg(newIndeximg === length -1  ? 0 : newIndeximg + 1)
-
-       
+        setIndeximg(newIndeximg === length  -1 ? 0 : newIndeximg + 1) 
         
         };
-        
-        
-   
+
+    if (location.pictures.length === 1 ) {
+        return (
+            <span className="caontainmg"><img className='img' src={location.pictures[indeximg]} alt="freelance"/></span>
+        )
+    }
 
     return (
         <div>
-             <img className='img' src={location.pictures[indeximg]} alt="freelance"/>
+           <img className='img' src={location.pictures[indeximg]} alt="freelance"/>
              <span className="arrleft" onClick={prevSlide}>
              <Arrowlft  onClick={prevSlide}/>
              </span>
              <span className="arright"  onClick={handleNext}>
              <Arrowright  />
              </span>
-            <p className="numero">{index+1}/{length+1}</p>
+            <p className="numero">{index}/{length}</p>
         </div>
         
     )

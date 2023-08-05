@@ -15,16 +15,10 @@
     padding: 30px;
     border-radius: 20px;
     background-color: #F6F6F6;
-    padding-right: 0px;
     
-    
-   
    
 }
 
-.card {
-    
-}
 
 
  .images {
@@ -34,15 +28,12 @@
     ;
     border-radius: 20px;
     cursor: pointer;
-    width: 85%;
+    width: 100%;
     display: flex;
         align-items: end;
         
     height:340px;
     object-fit: cover;
-    
-    
-    
 }
 
 
@@ -55,7 +46,7 @@
  margin-top: -50px;
  position:absolute;
  text-align: left;
- margin-left: -12%;
+ margin-left: -13%;
  
  
 }
@@ -81,15 +72,18 @@
 .home {
     padding: 0px 65px 0px 65px;
 }
-@media screen and (max-width:599px) {
+@media screen and (max-width:700px) {
     
     .cardcontain {
         display: flex;
         flex-direction: column;
+        
     }
 
     .titrehome {
         margin-left: -29%;
+        font-size: 13px;
+        
     }
 
     .home {
@@ -99,5 +93,10 @@
     .nav {
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    .titlekasa {
+        top: 17%;
+        font-size: 24px;
     }
 }

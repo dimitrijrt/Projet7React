@@ -4,7 +4,6 @@ import Card from '../../components/Card/card.jsx'
 import Stars from "../../assets/icons/Stars"
 import Carrousel from '../../components/Carrousel/Carrousel.jsx'
 import Collapse from "../../components/Collapse/Collapse";
-
 import style from './location.scss'
 
 
@@ -17,25 +16,26 @@ function Location() {
     return (
         
         <div className='location'>
-           <span className="img" >
-           <Carrousel />
-           </span>
+                <Carrousel />
+            <div className='items'>
             <div className='titrestars'>
                 <div className='titre'>
                     <span className='titrelocation'>{location.title}</span>
                     <span className='lieulocation'>{location.location}</span>
+                    <div className='link'>
+
+                         {location.tags.map((tag) => (
+                        <span className='tagstyle'>{tag} </span>
+                    ))}	
                 </div>
-                 <div className='right'>
-                    <span>{location.host.name}</span>
-                    <img className="imghost" src={location.host.picture}/>
-                 </div>
+                </div>
              </div>
              <div className='linkstars'>
-                <div className='link'>
-                    <span>{location.tags[0]}</span>
-                    <span>{location.tags[1]}</span>
-                    <span>{location.tags[2]}</span>
-                </div>
+               
+                <div className='right'>
+                    <span className='host'>{location.host.name}</span>
+                    <img className="imghost" src={location.host.picture}/>
+                 </div>
                 <div className='stars'>
                         <Stars/>
                         <Stars/>
@@ -45,7 +45,8 @@ function Location() {
                         <Stars/> 
                     </span>
                                  
-                    </div>
+                </div>
+             </div>
              </div>
              <div className='cardcontainloc'>
                 <Collapse

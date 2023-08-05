@@ -1,17 +1,19 @@
 
 .numero {
-    width:400px;
+    
     color:white;
     position: absolute;
-    top:50%;
-    padding-left: 100px;
+    top:48%;
+    right:40%;
+    left:39%;
     display: flex;
     justify-content: center;
+    
 }
 
 .tets {
     width:400px;
-    color: red;
+    color: white;
     position: absolute;
     top:400px;
     
@@ -19,14 +21,52 @@
 
 
 .arrleft {
-    left: 10%;
+    left: 5%;
     position: absolute;
     top:33%;
 }
 
 .arright {
     position: absolute;
-    right: 10%;
+    right: 5%;
     top:33%;
     
 }
+
+.img {
+ border-radius: 40px;
+ max-height: 415px;
+ width: 100%;
+ object-fit:cover;
+ position: relative;
+}
+
+
+@media screen and (max-width:750px) {
+    
+    .numero {
+        display: none;
+    }
+
+    .arright {
+        top:28%
+    }
+
+    .arrleft {
+        top:28%;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .arright {
+        top:17%;
+    }
+
+    .arrleft {
+        top:17%;
+    }
+}
+
+
+

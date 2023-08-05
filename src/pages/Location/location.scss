@@ -1,39 +1,42 @@
-.img {
-    width: 100%;
-        display: flex;
-        justify-content: center;
-        height: 415px;
-        object-fit: contain;
-        border-radius: 40px;
-      
-}
 
-
-
-
-
-.link span {
+.tagstyle {
     
         padding: 5px 40px;
         margin-right: 10px;
         cursor: pointer;
         border-radius: 18px;
         border: none;
-        color: #fff;
-        background-color: #FF6060;
-
-      
+        background-color:salmon;
+        color: white;
         
-       
 
+}
+
+
+.cardcontainloc {
+    display:flex;
+    flex:1;
+    gap:80px;
     
 }
 
-.link {
-    margin-bottom: 20px;
-    display: flex;
-    margin-top:30px;
-    gap:20px;
+.host {
+    font-size: 18px;
+    margin-top: 15px;
+    
+}
+
+.titre {
+
+    .link {
+            margin-bottom: 20px;
+            display: flex;
+            margin-top: 30px;
+            gap: 20px;
+            justify-content: flex-start;
+    
+        }
+
 }
 
 .description {
@@ -70,7 +73,7 @@
 
 .titrelocation {
     font-size:36px;
- 
+    text-align: left;
     font-weight: 500;
 }
 
@@ -98,7 +101,9 @@
 
 .linkstars {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 40px;
 }
 
 
@@ -113,28 +118,55 @@
 }
 
 .right {
-    align-items: center;
     display: flex;
-    gap:15px;
+    gap: 20px;
+    align-items: center;
 }
 
 .link span {
     max-height: 31px;
+    
 }
 
 .location {
     padding: 0px 65px 0px 65px;
 }
 
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 
 
 
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:750px) {
+
+    .location {
+        padding: 0 10px 0 10px;
+    }
+
+    .titrelocation {
+        font-size: 18px;
+    }
+
+    .numero {
+        top:38%;
+    }
+
+    .cardcontainloc {
+        gap:0px;
+    }
+
+    .items {
+        flex-direction: column;
+    }
 
     .linkstars {
-        display: block;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
     .stars {
@@ -144,16 +176,28 @@
     .link span {
         height: 18px;
         width: 84px;
+        padding-top: 4px;
 
     }
 
     .right {
-        align-items: end;
+        display: flex;
         
-        
+
     }
 
     .titrelocation {
         text-align: left;
+    }
+
+    .cardcontainloc {
+        flex-direction: column;
+    }
+
+    .tagstyle {
+        font-size: 10px;
+        max-width: 84px;
+        padding: 0;
+        margin: auto;
     }
 }
