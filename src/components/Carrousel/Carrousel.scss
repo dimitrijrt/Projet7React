@@ -38,6 +38,34 @@
  max-height: 415px;
  width: 100%;
  object-fit:cover;
+ position: relative;
+}
+
+
+@media screen and (max-width:750px) {
+    
+    .numero {
+        display: none;
+    }
+
+    .arright {
+        top:28%
+    }
+
+    .arrleft {
+        top:28%;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .arright {
+        top:17%;
+    }
+
+    .arrleft {
+        top:17%;
+    }
 }
 
 

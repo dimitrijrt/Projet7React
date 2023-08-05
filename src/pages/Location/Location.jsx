@@ -4,7 +4,6 @@ import Card from '../../components/Card/card.jsx'
 import Stars from "../../assets/icons/Stars"
 import Carrousel from '../../components/Carrousel/Carrousel.jsx'
 import Collapse from "../../components/Collapse/Collapse";
-
 import style from './location.scss'
 
 
@@ -34,7 +33,7 @@ function Location() {
              <div className='linkstars'>
                
                 <div className='right'>
-                    <span>{location.host.name}</span>
+                    <span className='host'>{location.host.name}</span>
                     <img className="imghost" src={location.host.picture}/>
                  </div>
                 <div className='stars'>

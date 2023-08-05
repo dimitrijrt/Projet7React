@@ -26,12 +26,22 @@
 
 
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:750px) {
     .liens {
         display: flex;
         flex-direction: row;
         
+        
     }
+
+    .styledlink {
+        font-size: 12px;
+    }
+
+    .logo img {
+        max-width: 145px;
+    }
+
 
     
     

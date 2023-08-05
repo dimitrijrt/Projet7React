@@ -8,6 +8,7 @@
         border: none;
         background-color:salmon;
         color: white;
+        
 
 }
 
@@ -19,11 +20,23 @@
     
 }
 
-.link {
-    margin-bottom: 20px;
-    display: flex;
-    margin-top:30px;
-    gap:20px;
+.host {
+    font-size: 18px;
+    margin-top: 15px;
+    
+}
+
+.titre {
+
+    .link {
+            margin-bottom: 20px;
+            display: flex;
+            margin-top: 30px;
+            gap: 20px;
+            justify-content: flex-start;
+    
+        }
+
 }
 
 .description {
@@ -60,7 +73,7 @@
 
 .titrelocation {
     font-size:36px;
- 
+    text-align: left;
     font-weight: 500;
 }
 
@@ -107,10 +120,12 @@
 .right {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .link span {
     max-height: 31px;
+    
 }
 
 .location {
@@ -129,6 +144,22 @@
 
 @media screen and (max-width:750px) {
 
+    .location {
+        padding: 0 10px 0 10px;
+    }
+
+    .titrelocation {
+        font-size: 18px;
+    }
+
+    .numero {
+        top:38%;
+    }
+
+    .cardcontainloc {
+        gap:0px;
+    }
+
     .items {
         flex-direction: column;
     }
@@ -145,6 +176,7 @@
     .link span {
         height: 18px;
         width: 84px;
+        padding-top: 4px;
 
     }
 
@@ -160,5 +192,12 @@
 
     .cardcontainloc {
         flex-direction: column;
+    }
+
+    .tagstyle {
+        font-size: 10px;
+        max-width: 84px;
+        padding: 0;
+        margin: auto;
     }
 }
