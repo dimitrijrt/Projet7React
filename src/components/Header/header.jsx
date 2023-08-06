@@ -19,9 +19,14 @@ function Header() {
     </div>
       
       <div className='liens'>
-        <span className='styledlink' onClick={() => navigate(`/`)}>Accueil</span>
-        <span  className='styledlink' onClick={() => navigate(`/apropos`)}>A propos</span>
-      
+        <div>
+          <span className='styledlink' onClick={() => navigate(`/`)}><a href="/">Accueil</a></span>
+        <hr className='hr'></hr>
+        </div>
+        <div>
+      <span  className='styledlink' onClick={() => navigate(`/apropos`)}><a href="/apropos">A propos</a></span>
+        <hr className='hr'></hr>
+        </div>
       </div>
       
       

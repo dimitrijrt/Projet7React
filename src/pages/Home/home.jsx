@@ -18,7 +18,7 @@ function Home() {
 
 
        <img className="homeimg" src={logo} alt="freelance"  />
-       <h1 className='titlekasa'>Chez vous, et partout ailleur</h1>
+       <h1 className='titlekasa'>Chez vous, et partout ailleurs</h1>
        <div className='cardcontain'>
            {locationFiltered.map((location, index) => (
                <div className='card' key={index} onClick={() => navigate(`/location/${location.id}`)}>

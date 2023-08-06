@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import data from '../../location.json'
 import Card from '../../components/Card/card.jsx'
 import Stars from "../../assets/icons/Stars"
+import GreyStars from '../../assets/icons/GreyStars';
 import Carrousel from '../../components/Carrousel/Carrousel.jsx'
 import Collapse from "../../components/Collapse/Collapse";
 import style from './location.scss'
@@ -41,8 +42,8 @@ function Location() {
                         <Stars/>
                         <Stars/>
                     <span className='greystars'>
-                        <Stars fill="#E3E3E3"/>
-                        <Stars/> 
+                        <GreyStars />
+                        <GreyStars/> 
                     </span>
                                  
                 </div>
