@@ -24,7 +24,6 @@ function Location() {
                     <span className='titrelocation'>{location.title}</span>
                     <span className='lieulocation'>{location.location}</span>
                     <div className='link'>
-
                          {location.tags.map((tag) => (
                         <span className='tagstyle'>{tag} </span>
                     ))}	
