@@ -33,7 +33,7 @@ ul {
 
 .wrapper {
         display: flex;
-            flex-direction: column;
+        flex-direction: column;
         padding-right: 20px;
         background-color: #F6F6F6;
         border-bottom-left-radius: 30px;
@@ -68,7 +68,7 @@ ul {
 
     &:active .Arrow {
         transition: all 0.2s ease-in-out;
-    transform: rotate(180deg);
+        transform: rotate(180deg);
 
     }
 
