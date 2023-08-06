@@ -13,7 +13,7 @@
     "sass": "^1.63.5",
     "styled-components": "^6.0.0-rc.3",
     "web-vitals": "^2.1.4",
-    "homepage":"http://dimitrijrt.github.io/Projet7React"
+    
   },
   "scripts": {
     "start": "react-scripts start",
