@@ -12,8 +12,8 @@
     "react-scripts": "5.0.1",
     "sass": "^1.63.5",
     "styled-components": "^6.0.0-rc.3",
-    "web-vitals": "^2.1.4",
-    "homepage":"http://dimitrijrt.github.io/Projet7React"
+    "web-vitals": "^2.1.4"
+    
   },
   "scripts": {
     "start": "react-scripts start",
